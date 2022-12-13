@@ -137,7 +137,7 @@ termcolor==1.1.0
 terminado==0.17.0
 textblob==0.17.1
 threadpoolctl==3.1.0
-tifffile==2022.8.12
+tifffile==2021.11.2
 tinycss2==1.2.1
 tornado==6.2
 tqdm==4.64.1
