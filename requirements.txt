@@ -118,7 +118,7 @@ websocket-client==1.4.2
 Werkzeug==2.2.2
 widgetsnbextension==4.0.4
 wordcloud==1.8.2.2
-xgboost==1.7.2
+xgboost==1.6.2
 xlrd==2.0.1
 xyzservices==2022.9.0
 zipp==3.11.0
