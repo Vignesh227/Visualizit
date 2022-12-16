@@ -43,7 +43,7 @@ jsonschema==4.17.3
 jupyter==1.0.0
 jupyter-client==7.4.8
 jupyter-console==6.4.4
-jupyter-core==5.1.0
+jupyter-core==5.0.0rc2
 jupyter-events==0.5.0
 jupyter-server==2.0.1
 jupyter-server-terminals==0.4.2
