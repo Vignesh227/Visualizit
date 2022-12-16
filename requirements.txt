@@ -46,7 +46,7 @@ jupyter-console==6.4.4
 jupyter-core==5.0.0rc2
 jupyter-events==0.5.0
 jupyter-server==2.0.0rc3
-jupyter-server-terminals==0.4.2
+jupyter-server-terminals==0.4.0
 jupyterlab-pygments==0.2.2
 jupyterlab-widgets==3.0.4
 kiwisolver==1.4.4
