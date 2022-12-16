@@ -17,7 +17,7 @@ app=Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/visualization')
+@app.route('/visualizit')
 def visualization():
     return render_template('visualization.html')
 
