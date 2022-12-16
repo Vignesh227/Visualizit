@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+    <title>VISUALIZIT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/vistyles.css">
+    <link rel="icon" href="/static/images/bar-graph-logo.png" type="image/x-icon">
+
+    <!-- JQuery CDN Link -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
+
+</head> 
+<body>
+    <!-- Navbar -->
+    <div class="header">
+        <nav>
+            <ul>
+                <div class="navbar">
+                    <li><a href="{{url_for('index')}}">HOME</a></li>
+                    <li><a href="{{url_for('visualization')}}">VISUALIZIT</a></li>
+                    <img src="/static/images/bar-graph-logo.png" alt="logo" class="logo">                    
+                </div>                
+            </ul>
+        </nav>
+    </div> 
+    <!-- End of Navbar -->
+
+    <!-- Main Content -->  
+    <div class="main-content">
+        
+            
+            <form action="{{url_for('getVisualization')}}" enctype="multipart/form-data" method="POST" onsubmit="load()">
+                <!-- First color div -->
+                <div class="div-one">
+                    <h1>Follow the steps below!</h1>    
+                    <div class="rowinput">
+                        <label for="rownumber"> Enter the row number of the header row in your file <br> <span>(If it is the first row, then this must be zero)</span></label>
+                        <input type="number" id="rownumber" min="0" max="10" name="rownum" placeholder="" required>
+                    </div>
+                    <section style="position: relative;" class="sec-one">
+                        <div class="custom-shape-divider-bottom-1670832027">
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                            </svg>
+                        </div>
+                    </section>
+                    
+                </div>            
+                
+                <!-- Second color div -->
+                <div class="div-two">
+                    
+                    <div class="content"><br><br><h1> Upload your dataset </h1> </div>
+                    <div class="fileinput">
+                        <input id="fileSelect" type="file" name="fname" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" required/>
+                    </div>
+                    <div class="button">
+                        <br>
+                        
+                        <br>
+                        <input type="submit" class="btn" value="Visualize" >
+                    </div>  
+                    <!-- Shape one -->
+                    <section style="position: relative;" class="sec-two">
+                        <div class="custom-shape-divider-bottom-1670851963">
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                            </svg>
+                        </div>
+                    </section>    
+                </div>          
+            </form>       
+            
+            
+    </div>
+    <!-- End of Main Content -->
+
+    <!-- LOADER icon -->
+    
+    
+    <div  id="div-three" class="div-three"> 
+        <h1 class="headvis">Visualizations</h1>
+
+        
+        
+        <div class="div-three-inner">
+            <img src="/static/images/visuvalize-new.png" alt="boy-excel-image" class="visuvalize-img">
+            
+            <div id="loader">VISUVALIZING
+                <span id="innerloader"></span>
+            </div>  
+            <div class="plotlinks" id="plotlinks" >
+                <h2>{{a}}</h2>
+                <a href="heatmaps" target="_blank">{{h}}</a>
+                <a href="distplots" target="_blank">{{d}}</a> 
+                <a href="catvarplots" target="_blank">{{c}}</a>
+                <a href="pairscatters" target="_blank">{{p}}</a>
+                <a href="violinplots" target="_blank">{{v}}</a> 
+            </div>
+            
+        </div>
+        
+        
+        <section style="position: relative;" class="sec-three">
+            <div class="custom-shape-divider-bottom-1670847636">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
+            </div>  
+        </section>
+        
+    </div>
+
+
+    <!-- Footer -->
+    <footer> <p>
+        Designed by <a href="https://github.com/Vignesh227" target="_blank"> Vignesh</a> & <a href="https://github.com/selvaskr" target="_blank">Selva</a> 
+    </p>
+    </footer>   
+    <!-- End of Footer -->
+
+    <script src="/static/main.js"></script>
+</body>
