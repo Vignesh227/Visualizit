@@ -88,7 +88,6 @@ python-dateutil==2.8.2
 python-json-logger==2.0.4
 pytz==2022.6
 pyviz-comms==2.2.1
-pywinpty==2.0.9
 PyYAML==6.0
 pyzmq==24.0.1
 qtconsole==5.4.0
