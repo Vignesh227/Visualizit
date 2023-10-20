@@ -18,3 +18,19 @@ Upload your dataset and receive attractive visualizations!
 
 <hr>
 
+# Visualizations
+
+## HeatMap
+
+![image](https://github.com/Vignesh227/Visualizit/assets/96369223/70a2797c-6f0d-4266-80d7-70948ca9e913)
+
+## DistPlots
+
+![image](https://github.com/Vignesh227/Visualizit/assets/96369223/44362750-4f2b-4e28-b048-c21dd7e88d3f)
+
+## Categorical Variable Plots
+
+![image](https://github.com/Vignesh227/Visualizit/assets/96369223/253b0992-ba0b-4341-bb96-b8057cca8492)
+
+
+
