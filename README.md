@@ -18,6 +18,7 @@ Upload your dataset and receive attractive visualizations!
 
 <hr>
 
+
 # Visualizations
 
 ## HeatMap
@@ -32,5 +33,14 @@ Upload your dataset and receive attractive visualizations!
 
 ![image](https://github.com/Vignesh227/Visualizit/assets/96369223/253b0992-ba0b-4341-bb96-b8057cca8492)
 
+## Pair Scatter Plots
+
+![image](https://github.com/Vignesh227/Visualizit/assets/96369223/5e79bc44-0975-4f2b-acd5-5f75461d76d7)
+
+## ViolinPlots
+
+![image](https://github.com/Vignesh227/Visualizit/assets/96369223/1ddc77d5-6683-44ad-bc6a-428eaac8c56a)
+
+<hr>
 
 
